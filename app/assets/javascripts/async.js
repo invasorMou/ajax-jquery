@@ -1,6 +1,7 @@
+var test = [];
 function getAllPosts() {
   $.ajax({
-    url: "http://localhost:3001/posts.json",
+    url: "/posts.json",
     success: function(response) {
       $(".post").empty();
       console.log(response);
